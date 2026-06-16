@@ -1,6 +1,10 @@
+# Windows bootloader config editor
+
 A small utility to dump and eventually edit Windows BCD (Boot Configuration Data) registry hive, in a cross-platform way.
 
 Made it a while ago but I'm not sure if it even works well. Play around with it, honestly
+
+Usage: `bcd-editor path/to/BCD` (see notes below for where to source one). All concerns about permissions and getting the partition mounted are on you, this tool deals with only already "prepared" files
 
 `known_symbols.json` is an attempt to make name resolution data driven
 
@@ -16,7 +20,7 @@ Because I fucked up my windows bootloader when copying the partition over to ano
 
 I still had to hexedit the binary data in the end and use `chntpw` (which is actually capable of working as registry editor!), as I struggled to figure out how the binary blobs are structured, but making this helped me figure out where the partition GUID is residing within them..
 
-# Links
+## Links
 
 Huge thanks for information and IDs from:
 - https://www.geoffchappell.com/notes/windows/boot/bcd/objects.htm
@@ -24,7 +28,7 @@ Huge thanks for information and IDs from:
 - https://github.com/kupiakos/pybcd for the information about Device elements format and test data
 - https://doxygen.reactos.org/da/db4/bl_8h_source.html#l00245 - I am not sure where this is from, but that is helpful... -ish
 
-# Support
+## Support
 
 This is where a kofi link could have been if I coul use it!
 
