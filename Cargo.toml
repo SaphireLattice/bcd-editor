@@ -1,0 +1,11 @@
+[package]
+name = "bcd_editor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#nt-hive = "0.2.0"
+nt-hive = { git = "https://github.com/ColinFinck/nt-hive.git" }
+uuid = "1.1.2"
